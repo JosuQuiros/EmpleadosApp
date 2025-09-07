@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Empleado>
+<h2>Lista de Empleados</h2>
+<p><a href="/Empleado/Insertar">Insertar Empleado</a></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Salario</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Nombre</td>
+                <td>@emp.Salario</td>
+            </tr>
+        }
+    </tbody>
+</table>

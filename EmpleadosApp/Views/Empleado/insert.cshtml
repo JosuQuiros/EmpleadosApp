@@ -1,0 +1,21 @@
+﻿@model Empleado
+<h2>Insertar Empleado</h2>
+
+<form asp-action="Insertar" method="post">
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre"></span>
+    </div>
+    <div>
+        <label>Salario</label>
+        <input asp-for="Salario" />
+        <span asp-validation-for="Salario"></span>
+    </div>
+    <button type="submit">Insertar</button>
+    <a href="/Empleado/Index">Regresar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
