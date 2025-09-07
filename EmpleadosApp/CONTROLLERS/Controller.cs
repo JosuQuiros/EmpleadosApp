@@ -16,13 +16,13 @@ public class EmpleadoController : Controller
 	}
 
 	[HttpGet]
-	public IActionResult Insertar()
+	public IActionResult Insert()
 	{
 		return View();
 	}
 
 	[HttpPost]
-	public IActionResult Insertar(Empleado empleado)
+	public IActionResult Insert(Empleado empleado)
 	{
 		if (!ModelState.IsValid)
 			return View(empleado);
