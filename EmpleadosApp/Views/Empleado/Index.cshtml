@@ -5,6 +5,7 @@
 <table class="table">
     <thead>
         <tr>
+            <th>Id</th>
             <th>Nombre</th>
             <th>Salario</th>
         </tr>
@@ -13,6 +14,7 @@
         @foreach (var emp in Model)
         {
             <tr>
+                <td>@emp.Id</td>
                 <td>@emp.Nombre</td>
                 <td>@emp.Salario</td>
             </tr>
